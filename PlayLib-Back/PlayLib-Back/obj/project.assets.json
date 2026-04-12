@@ -453,11 +453,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
+      "projectUniqueName": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
       "projectName": "PlayLib-Back",
-      "projectPath": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
+      "projectPath": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
       "packagesPath": "C:\\Users\\Diggez_Kettni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\obj\\",
+      "outputPath": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
