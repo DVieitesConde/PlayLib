@@ -1,0 +1,14 @@
+<mat-sidenav-container class="sidenav-container">
+
+  <mat-sidenav class="sidebar" #sidenav="matSidenav" mode="side" opened>
+    <div class="button">
+      <p><button routerLink="/home">Home</button></p>
+      
+    </div>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>
