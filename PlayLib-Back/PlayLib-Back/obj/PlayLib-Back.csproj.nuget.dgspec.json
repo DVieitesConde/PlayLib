@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj": {}
+    "D:\\Proyecto PlayLib\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj": {
+    "D:\\Proyecto PlayLib\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
+        "projectUniqueName": "D:\\Proyecto PlayLib\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
         "projectName": "PlayLib-Back",
-        "projectPath": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
-        "packagesPath": "C:\\Users\\Diggez_Kettni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Diggez_Kettni\\Desktop\\Study Study\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back\\obj\\",
+        "projectPath": "D:\\Proyecto PlayLib\\PlayLib\\PlayLib-Back\\PlayLib-Back\\PlayLib-Back.csproj",
+        "packagesPath": "C:\\Users\\gisel\\.nuget\\packages\\",
+        "outputPath": "D:\\Proyecto PlayLib\\PlayLib\\PlayLib-Back\\PlayLib-Back\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Diggez_Kettni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gisel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -45,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -75,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
