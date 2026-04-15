@@ -1,17 +1,15 @@
 import { Component } from '@angular/core';
 import { Videogames } from '../../model/videogame';
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button';
 import { Tabletop } from '../../model/tabletop';
+import { ScrollableListVg } from "../scrollable-list-vg/scrollable-list-vg";
+import { ScrollableListTg } from "../scrollable-list-tg/scrollable-list-tg";
 
 @Component({
   selector: 'app-home',
   imports: [
-    MatCardModule,
-    MatIconModule,
-    MatButtonModule
-  ],
+    ScrollableListVg,
+    ScrollableListTg
+],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

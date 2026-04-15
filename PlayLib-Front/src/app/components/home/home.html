@@ -3,72 +3,9 @@
     <div class="title">
       <h1>Bienvenido a PlayLib</h1>
     </div>
-    <div class="subtitle_videogames">
-      <h2>Videojuegos más populares</h2>
-    </div>
-    <div class="carousel-container">
-
-      <button mat-icon-button class="nav left" (click)="scroll(vg_carousel, -1)">
-        <mat-icon>chevron_left</mat-icon>
-      </button>
-
-      <div class="carousel" #vg_carousel>
-
-        @for (game of videogames; track game.id) {
-        <mat-card class="card">
-
-          <div class="image-container">
-            <img mat-card-image [src]="game.image_route" [alt]="game.name">
-          </div>
-
-          <mat-card-content class="videogame_name">
-            {{ game.name }}
-          </mat-card-content>
-
-        </mat-card>
-        }
-
-      </div>
-
-      <button mat-icon-button class="nav right" (click)="scroll(vg_carousel, 1)">
-        <mat-icon>chevron_right</mat-icon>
-      </button>
-
-    </div>
-
-    <div class="subtitle_tabletops">
-      <h2>Juegos de mesa más populares</h2>
-    </div>
-
-    <div class="carousel-container">
-
-      <button mat-icon-button class="nav left" (click)="scroll(tg_carousel, -1)">
-        <mat-icon>chevron_left</mat-icon>
-      </button>
-
-      <div class="carousel" #tg_carousel>
-
-        @for (game of tabletops; track game.id) {
-        <mat-card class="card">
-
-          <div class="image-container">
-            <img mat-card-image [src]="game.image_route" [alt]="game.name">
-          </div>
-
-          <mat-card-content class="tabletop_name">
-            {{ game.name }}
-          </mat-card-content>
-
-        </mat-card>
-        }
-
-      </div>
-
-      <button mat-icon-button class="nav right" (click)="scroll(tg_carousel, 1)">
-        <mat-icon>chevron_right</mat-icon>
-      </button>
-
-    </div>
+    <app-scrollable-list-vg [title]="'Videojuegos más populares'" [videogames]="videogames">
+    </app-scrollable-list-vg>
+    <app-scrollable-list-tg [title]="'Juegos de mesa más populares'" [tabletopGames]="tabletops">
+    </app-scrollable-list-tg>
 
   </div>
-</div>
