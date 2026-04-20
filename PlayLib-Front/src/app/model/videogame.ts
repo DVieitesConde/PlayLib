@@ -1,4 +1,4 @@
-export interface Videogames {
+export interface Videogame {
   id: string; 
   name: string;
   description: string;

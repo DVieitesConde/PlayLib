@@ -11,4 +11,9 @@
 
 .button{
     padding-left: 20%;
+    padding-top: 70%;
+}
+
+button{
+  margin-top: 10%;
 }

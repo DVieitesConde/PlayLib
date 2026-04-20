@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Videogames } from '../../model/videogame';
+import { Videogame } from '../../model/videogame';
 import { Tabletop } from '../../model/tabletop';
 import { ScrollableListVg } from "../scrollable-list-vg/scrollable-list-vg";
 import { ScrollableListTg } from "../scrollable-list-tg/scrollable-list-tg";
@@ -15,7 +15,7 @@ import { ScrollableListTg } from "../scrollable-list-tg/scrollable-list-tg";
 })
 export class Home {
 
-  videogames: Videogames[] = [
+  videogames: Videogame[] = [
   {
     id: '1',
     name: 'Undertale',
