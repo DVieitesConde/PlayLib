@@ -40,6 +40,18 @@ public static class ServicesConfiguration {
         services.AddScoped<IPasswordHasher, BcriptPasswordHasher>();
         services.AddScoped<IUserRepository, UserRepository>();
         services.AddScoped<IAuthService, AuthService>();
+        services.AddScoped<IReviewRepository, ReviewRepository>();
+        services.AddScoped<IReviewService, ReviewService>();
+        services.AddScoped<ITagRepository, TagRepository>();
+        services.AddScoped<ITagService, TagService>();
+        services.AddScoped<IVideogameRepository, VideogameRepository>();
+        services.AddScoped<IVideogameService, VideogameService>();
+        services.AddScoped<ITabletopRepository, TabletopRepository>();
+        services.AddScoped<ITabletopService, TabletopService>();
+        services.AddScoped<IFavouriteRepository, FavouriteRepository>();
+        services.AddScoped<IFavouriteService, FavouriteService>();
+        services.AddScoped<IRequestRepository, RequestRepository>();
+        services.AddScoped<IRequestService, RequestService>();
 
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(o =>
         {

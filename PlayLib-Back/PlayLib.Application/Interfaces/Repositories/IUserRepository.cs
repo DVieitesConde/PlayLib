@@ -9,5 +9,7 @@ public interface IUserRepository {
 
     Task<User> GetByLoginInfo(string loginInfo);
 
+    Task<User> GetById(Guid id);
+
     Task<bool> Create(User user);
 }

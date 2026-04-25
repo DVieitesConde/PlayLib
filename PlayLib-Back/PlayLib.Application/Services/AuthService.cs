@@ -10,17 +10,11 @@ using System.Text;
 
 namespace PlayLib.Application.Services;
 
-public class AuthService : IAuthService {
+public class AuthService(IPasswordHasher passwordHasher, AuthConfiguration authConfiguration, IUserRepository userRepository) : IAuthService {
 
-    private readonly IPasswordHasher _passwordHasher;
-    private readonly IUserRepository _userRepository;
-    private readonly AuthConfiguration _authConfiguration;
-    public AuthService(IPasswordHasher passwordHasher, AuthConfiguration authConfiguration, IUserRepository userRepository)
-    {
-        _passwordHasher = passwordHasher;
-        _authConfiguration = authConfiguration;
-        _userRepository = userRepository;
-    }
+    private readonly IPasswordHasher _passwordHasher = passwordHasher ?? throw new ArgumentNullException(nameof(passwordHasher));
+    private readonly IUserRepository _userRepository = userRepository ?? throw new ArgumentNullException(nameof(userRepository));
+    private readonly AuthConfiguration _authConfiguration = authConfiguration ?? throw new ArgumentNullException(nameof(authConfiguration));
 
     public async Task<AuthUserResponse> Login(User user)
     {

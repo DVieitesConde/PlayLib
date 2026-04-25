@@ -4,14 +4,10 @@ using PlayLib.Data.Entities;
 
 namespace PlayLib.Application.Services.Repositories;
 
-public class UserRepository : IUserRepository {
+public class UserRepository(PlayLibDContext context) : IUserRepository {
 
-    private readonly PlayLibDContext _dbContext;
+    private readonly PlayLibDContext _dbContext = context ?? throw new ArgumentNullException(nameof(context));
 
-    public UserRepository(PlayLibDContext context)
-    {
-        _dbContext = context;
-    }
     public async Task<bool> Create(User user)
     {
         try
@@ -41,5 +37,10 @@ public class UserRepository : IUserRepository {
     public async Task<User> GetByLoginInfo(string loginInfo)
     {
         return await _dbContext.Users.FirstOrDefaultAsync(x => x.UserName == loginInfo || x.Email == loginInfo);
+    }
+
+    public async Task<User> GetById(Guid id)
+    {
+        return await _dbContext.Users.FindAsync(id);
     }
 }
