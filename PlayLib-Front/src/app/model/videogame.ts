@@ -6,4 +6,5 @@ export interface Videogame {
   image_route: string;
   release_date: Date;
   format: string;
+  state: string;
 }

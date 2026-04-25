@@ -1,4 +1,5 @@
 import { Routes } from '@angular/router';
+import { profile } from 'console';
 
 
 export const routes: Routes = [
@@ -23,6 +24,8 @@ export const routes: Routes = [
       { path: 'tabletop-game/:id', loadComponent: () => import('./components/tabletop-game-component/tabletop-game-component').then(m => m.TabletopGameComponent) },
       { path: 'videogame-library', loadComponent: () => import('./components/videogame-library/videogame-library').then(m => m.VideogameLibrary) },
       { path: 'tabletop-game-library', loadComponent: () => import('./components/tabletop-game-library/tabletop-game-library').then(m => m.TabletopGameLibrary) },
+      { path: 'request-list', loadComponent: () => import('./components/request-list/request-list').then(m => m.RequestList) },
+      { path: 'profile', loadComponent: () => import('./components/profile/profile').then(m => m.Profile)},
     ]
   }
 ];

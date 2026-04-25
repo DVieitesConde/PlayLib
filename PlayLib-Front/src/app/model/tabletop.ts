@@ -7,5 +7,6 @@ export interface Tabletop {
   release_date: Date;
   min_player: number;
   max_player: number;
-  average_duration: number; 
+  average_duration: number;
+  plays: number;
 }

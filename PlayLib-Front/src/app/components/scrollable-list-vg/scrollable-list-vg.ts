@@ -25,7 +25,7 @@ export class ScrollableListVg {
   }
 
   goToGame(game: Videogame) {
-    this.router.navigate(['/videogame', game.id], {
+    this.router.navigate(['/videogame', game.name], {
       state: { game }  
     });
   }
