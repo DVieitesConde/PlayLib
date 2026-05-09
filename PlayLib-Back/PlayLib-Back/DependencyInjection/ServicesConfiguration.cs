@@ -6,6 +6,7 @@ using PlayLib.Application.Interfaces.Repositories;
 using PlayLib.Application.Services;
 using PlayLib.Application.Services.Repositories;
 using PlayLib.Data.Entities;
+using PlayLib.Data.Options;
 using PlayLib.Data.Responses;
 using System.Text;
 
@@ -32,6 +33,9 @@ public static class ServicesConfiguration {
         options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
         );
 
+        services.Configure<GmailOptions>(
+            configuration.GetSection(GmailOptions.GmailOptionsKey));
+
         AuthConfiguration authConfiguration = new AuthConfiguration();
 
         configuration.Bind("Authentication", authConfiguration);
@@ -52,6 +56,7 @@ public static class ServicesConfiguration {
         services.AddScoped<IFavouriteService, FavouriteService>();
         services.AddScoped<IRequestRepository, RequestRepository>();
         services.AddScoped<IRequestService, RequestService>();
+        services.AddTransient<IEmailSender, EmailSender>();
 
         services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(o =>
         {
